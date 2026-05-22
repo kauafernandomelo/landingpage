@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brasa Urbana — Hambúrguer de Verdade</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;1,700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================
+       NAVBAR
+  ============================ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#" class="navbar__logo">
+        <span class="logo-brasa">BRASA</span><span class="logo-urbana">URBANA</span>
+      </a>
+
+      <nav class="navbar__menu" id="navMenu">
+        <a href="#promocoes">Promoções</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#diferenciais">Sobre</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#footer">Contato</a>
+      </nav>
+
+      <a href="#cta" class="btn btn--primary navbar__cta">Peça Agora</a>
+
+      <button class="navbar__hamburger" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================
+       HERO
+  ============================ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-stripe"></div>
+    <div class="hero__container">
+      <div class="hero__content">
+        <p class="hero__eyebrow">🔥 Feito na brasa. Todo dia.</p>
+        <h1 class="hero__title">
+          Hambúrguer<br>de verdade.<br><em>Sabor de respeito.</em>
+        </h1>
+        <p class="hero__subtitle">Carne artesanal, pão selado na manteiga e ingredientes frescos. Sem frescura, só sabor.</p>
+        <div class="hero__btns">
+          <a href="#cardapio" class="btn btn--primary btn--lg">Ver Cardápio</a>
+          <a href="#cta" class="btn btn--outline btn--lg">Fazer Pedido</a>
+        </div>
+        <div class="hero__badges">
+          <span>⭐ 4.9 no iFood</span>
+          <span>🏆 Melhor Smash da Cidade</span>
+          <span>🚀 Entrega em 30min</span>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__burger-wrap">
+          <div class="hero__burger-img">
+            <div class="burger-graphic">
+              <!-- Burger SVG illustration -->
+              <svg viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg" class="burger-svg">
+                <!-- sesame seeds on bun top -->
+                <ellipse cx="160" cy="48" rx="90" ry="42" fill="#c8702a"/>
+                <ellipse cx="160" cy="44" rx="90" ry="40" fill="#e8832e"/>
+                <ellipse cx="160" cy="40" rx="88" ry="36" fill="#f0972f"/>
+                <!-- seeds -->
+                <ellipse cx="135" cy="28" rx="7" ry="4" fill="#c8702a" transform="rotate(-15,135,28)"/>
+                <ellipse cx="160" cy="22" rx="7" ry="4" fill="#c8702a"/>
+                <ellipse cx="185" cy="28" rx="7" ry="4" fill="#c8702a" transform="rotate(15,185,28)"/>
+                <ellipse cx="148" cy="38" rx="6" ry="3" fill="#c8702a" transform="rotate(-10,148,38)"/>
+                <ellipse cx="172" cy="38" rx="6" ry="3" fill="#c8702a" transform="rotate(10,172,38)"/>
+                <!-- lettuce -->
+                <path d="M60 85 Q90 70 120 80 Q150 65 180 78 Q210 68 250 82 Q265 95 250 100 Q210 88 180 96 Q150 84 120 97 Q90 88 60 100 Z" fill="#4caf50"/>
+                <path d="M65 90 Q95 76 125 86 Q155 72 185 84 Q215 74 252 88" stroke="#2e7d32" stroke-width="2" fill="none"/>
+                <!-- tomato -->
+                <rect x="68" y="100" width="184" height="18" rx="5" fill="#e53935"/>
+                <line x1="118" y1="100" x2="118" y2="118" stroke="#c62828" stroke-width="1.5"/>
+                <line x1="160" y1="100" x2="160" y2="118" stroke="#c62828" stroke-width="1.5"/>
+                <line x1="202" y1="100" x2="202" y2="118" stroke="#c62828" stroke-width="1.5"/>
+                <!-- cheese -->
+                <path d="M58 118 L262 118 L268 136 L52 136 Z" fill="#ffc107"/>
+                <!-- patty -->
+                <rect x="55" y="136" width="210" height="38" rx="8" fill="#4e2700"/>
+                <rect x="55" y="136" width="210" height="12" rx="6" fill="#6d3400"/>
+                <!-- grill marks -->
+                <line x1="90" y1="140" x2="90" y2="170" stroke="#3a1c00" stroke-width="3" stroke-linecap="round"/>
+                <line x1="120" y1="140" x2="120" y2="170" stroke="#3a1c00" stroke-width="3" stroke-linecap="round"/>
+                <line x1="150" y1="140" x2="150" y2="170" stroke="#3a1c00" stroke-width="3" stroke-linecap="round"/>
+                <line x1="180" y1="140" x2="180" y2="170" stroke="#3a1c00" stroke-width="3" stroke-linecap="round"/>
+                <line x1="210" y1="140" x2="210" y2="170" stroke="#3a1c00" stroke-width="3" stroke-linecap="round"/>
+                <!-- bottom bun -->
+                <rect x="52" y="174" width="216" height="24" rx="4" fill="#e8832e"/>
+                <ellipse cx="160" cy="202" rx="110" ry="20" fill="#c8702a"/>
+                <!-- plate shadow -->
+                <ellipse cx="160" cy="228" rx="120" ry="12" fill="rgba(0,0,0,0.18)"/>
+                <!-- smoke -->
+                <path d="M120 20 Q115 8 122 0" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M160 15 Q154 3 161 -5" stroke="rgba(255,255,255,0.4)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M200 20 Q205 8 198 0" stroke="rgba(255,255,255,0.5)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </div>
+          <div class="hero__side-items">
+            <div class="hero__fries">
+              <svg viewBox="0 0 80 120" xmlns="http://www.w3.org/2000/svg">
+                <rect x="15" y="50" width="50" height="60" rx="4" fill="#d32f2f"/>
+                <text x="40" y="80" text-anchor="middle" fill="white" font-size="10" font-weight="bold">BRASA</text>
+                <rect x="20" y="10" width="8" height="45" rx="3" fill="#ffc107"/>
+                <rect x="32" y="5" width="8" height="50" rx="3" fill="#ffca28"/>
+                <rect x="44" y="8" width="8" height="47" rx="3" fill="#ffc107"/>
+                <rect x="56" y="12" width="8" height="43" rx="3" fill="#ffca28"/>
+              </svg>
+            </div>
+            <div class="hero__cup">
+              <svg viewBox="0 0 70 110" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20 L15 100 Q15 108 35 108 Q55 108 55 100 L60 20 Z" fill="#b71c1c"/>
+                <path d="M10 20 L60 20 Q60 28 35 28 Q10 28 10 20 Z" fill="#d32f2f"/>
+                <rect x="28" y="5" width="14" height="16" rx="3" fill="#b71c1c"/>
+                <rect x="25" y="3" width="20" height="6" rx="3" fill="#333"/>
+                <text x="35" y="70" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="8" font-weight="bold">BRASA</text>
+                <text x="35" y="80" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="6">URBANA</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__ticker">
+      <div class="ticker__track">
+        <span>🍔 X-BRASA</span><span>🥓 BACON SUPREMO</span><span>🔥 SMASH URBANA</span><span>🧀 CHEDDAR EXPLOSION</span><span>🍟 BATATA ARTESANAL</span><span>🥤 REFRI GELADO</span>
+        <span>🍔 X-BRASA</span><span>🥓 BACON SUPREMO</span><span>🔥 SMASH URBANA</span><span>🧀 CHEDDAR EXPLOSION</span><span>🍟 BATATA ARTESANAL</span><span>🥤 REFRI GELADO</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       PROMOÇÕES
+  ============================ -->
+  <section class="promocoes" id="promocoes">
+    <div class="section-header">
+      <span class="section-tag">🔥 Só essa semana</span>
+      <h2 class="section-title">Promoções <em>Imperdíveis</em></h2>
+    </div>
+    <div class="promocoes__grid">
+      <div class="promo-card promo-card--destaque">
+        <div class="promo-card__badge">MAIS PEDIDO</div>
+        <div class="promo-card__icon">🍔🍟🥤</div>
+        <h3>Combo Brasa Completo</h3>
+        <p>X-Brasa + Batata Grande + Refri 500ml</p>
+        <div class="promo-card__price">
+          <span class="price-old">R$ 59,90</span>
+          <span class="price-new">R$ 44,90</span>
+        </div>
+        <a href="#cta" class="btn btn--primary">Pegar o Combo</a>
+      </div>
+
+      <div class="promo-card">
+        <div class="promo-card__badge promo-card__badge--yellow">PROMOÇÃO</div>
+        <div class="promo-card__icon">🥓🧀</div>
+        <h3>Dupla Brasa</h3>
+        <p>2 Smash Urbana + 2 Refris</p>
+        <div class="promo-card__price">
+          <span class="price-old">R$ 79,90</span>
+          <span class="price-new">R$ 59,90</span>
+        </div>
+        <a href="#cta" class="btn btn--outline">Aproveitar</a>
+      </div>
+
+      <div class="promo-card">
+        <div class="promo-card__badge promo-card__badge--yellow">PROMOÇÃO</div>
+        <div class="promo-card__icon">🍟🍟</div>
+        <h3>Família Urbana</h3>
+        <p>4 Burgers + 4 Batatinhas + 4 Refris</p>
+        <div class="promo-card__price">
+          <span class="price-old">R$ 189,90</span>
+          <span class="price-new">R$ 139,90</span>
+        </div>
+        <a href="#cta" class="btn btn--outline">Aproveitar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CARDÁPIO
+  ============================ -->
+  <section class="cardapio" id="cardapio">
+    <div class="section-header section-header--light">
+      <span class="section-tag section-tag--dark">🍔 Nossos Burgers</span>
+      <h2 class="section-title">O <em>Cardápio</em></h2>
+      <p class="section-sub">Todos feitos na hora. Sem microndar. Sem mentira.</p>
+    </div>
+
+    <div class="cardapio__tabs">
+      <button class="tab-btn active" data-cat="burgers">Burgers</button>
+      <button class="tab-btn" data-cat="combos">Combos</button>
+      <button class="tab-btn" data-cat="extras">Extras</button>
+    </div>
+
+    <div class="cardapio__grid" id="cardapioGrid">
+
+      <div class="menu-card" data-cat="burgers">
+        <div class="menu-card__img menu-card__img--1">
+          <div class="burger-mini">
+            <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="60" cy="20" rx="46" ry="18" fill="#e8832e"/>
+              <ellipse cx="60" cy="16" rx="44" ry="14" fill="#f0972f"/>
+              <ellipse cx="45" cy="10" rx="5" ry="3" fill="#c8702a" transform="rotate(-10,45,10)"/>
+              <ellipse cx="60" cy="8" rx="5" ry="3" fill="#c8702a"/>
+              <ellipse cx="75" cy="10" rx="5" ry="3" fill="#c8702a" transform="rotate(10,75,10)"/>
+              <path d="M18 38 Q40 30 60 34 Q80 28 102 36 Q108 44 102 46 Q80 40 60 44 Q40 38 18 46 Z" fill="#4caf50"/>
+              <rect x="16" y="46" width="88" height="10" rx="3" fill="#e53935"/>
+              <path d="M13 56 L107 56 L110 64 L10 64 Z" fill="#ffc107"/>
+              <rect x="10" y="64" width="100" height="16" rx="5" fill="#4e2700"/>
+              <line x1="30" y1="66" x2="30" y2="78" stroke="#3a1c00" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="50" y1="66" x2="50" y2="78" stroke="#3a1c00" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="70" y1="66" x2="70" y2="78" stroke="#3a1c00" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="90" y1="66" x2="90" y2="78" stroke="#3a1c00" stroke-width="2.5" stroke-linecap="round"/>
+              <ellipse cx="60" cy="86" rx="52" ry="8" fill="#c8702a"/>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Clássico</span>
+          <h3>X-Brasa</h3>
+          <p>Smash 160g, queijo prato, alface, tomate, molho da casa, pão brioche selado</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">R$ 34,90</span>
+            <a href="#cta" class="btn btn--sm btn--primary">Pedir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="burgers">
+        <div class="menu-card__img menu-card__img--2">
+          <div class="burger-mini">
+            <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="60" cy="20" rx="46" ry="18" fill="#c8702a"/>
+              <ellipse cx="60" cy="16" rx="44" ry="14" fill="#e8832e"/>
+              <ellipse cx="45" cy="10" rx="5" ry="3" fill="#a05a20" transform="rotate(-10,45,10)"/>
+              <ellipse cx="60" cy="8" rx="5" ry="3" fill="#a05a20"/>
+              <ellipse cx="75" cy="10" rx="5" ry="3" fill="#a05a20" transform="rotate(10,75,10)"/>
+              <rect x="16" y="34" width="88" height="8" rx="3" fill="#5d2e0c"/>
+              <rect x="14" y="42" width="92" height="6" rx="2" fill="#5d2e0c"/>
+              <path d="M13 48 L107 48 L110 56 L10 56 Z" fill="#ffc107"/>
+              <rect x="10" y="56" width="100" height="20" rx="5" fill="#3e1f00"/>
+              <line x1="30" y1="58" x2="30" y2="74" stroke="#2a1200" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="50" y1="58" x2="50" y2="74" stroke="#2a1200" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="70" y1="58" x2="70" y2="74" stroke="#2a1200" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="90" y1="58" x2="90" y2="74" stroke="#2a1200" stroke-width="2.5" stroke-linecap="round"/>
+              <ellipse cx="60" cy="82" rx="52" ry="8" fill="#c8702a"/>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <span class="menu-card__tag menu-card__tag--hot">🔥 Top Vendas</span>
+          <h3>Bacon Supremo</h3>
+          <p>Smash 180g duplo, bacon artesanal, cheddar, cebola caramelizada, maionese defumada</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">R$ 42,90</span>
+            <a href="#cta" class="btn btn--sm btn--primary">Pedir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="burgers">
+        <div class="menu-card__img menu-card__img--3">
+          <div class="burger-mini">
+            <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="60" cy="18" rx="50" ry="16" fill="#d9601a"/>
+              <ellipse cx="60" cy="14" rx="48" ry="12" fill="#f08030"/>
+              <ellipse cx="42" cy="9" rx="5" ry="3" fill="#b84c10" transform="rotate(-10,42,9)"/>
+              <ellipse cx="60" cy="7" rx="5" ry="3" fill="#b84c10"/>
+              <ellipse cx="78" cy="9" rx="5" ry="3" fill="#b84c10" transform="rotate(10,78,9)"/>
+              <rect x="12" y="30" width="96" height="22" rx="6" fill="#4a2000"/>
+              <line x1="28" y1="33" x2="28" y2="50" stroke="#2e1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="48" y1="33" x2="48" y2="50" stroke="#2e1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="68" y1="33" x2="68" y2="50" stroke="#2e1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="88" y1="33" x2="88" y2="50" stroke="#2e1200" stroke-width="3" stroke-linecap="round"/>
+              <rect x="12" y="52" width="96" height="22" rx="6" fill="#4a2000"/>
+              <line x1="28" y1="55" x2="28" y2="72" stroke="#2e1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="48" y1="55" x2="48" y2="72" stroke="#2e1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="68" y1="55" x2="68" y2="72" stroke="#2e1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="88" y1="55" x2="88" y2="72" stroke="#2e1200" stroke-width="3" stroke-linecap="round"/>
+              <ellipse cx="60" cy="80" rx="52" ry="8" fill="#c8702a"/>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Especial</span>
+          <h3>Brasa Duplo</h3>
+          <p>2x Smash 160g, 2x queijo americano, picles, ketchup artesanal, pão potato</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">R$ 48,90</span>
+            <a href="#cta" class="btn btn--sm btn--primary">Pedir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="burgers">
+        <div class="menu-card__img menu-card__img--4">
+          <div class="burger-mini">
+            <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="60" cy="20" rx="46" ry="18" fill="#e8832e"/>
+              <ellipse cx="60" cy="16" rx="44" ry="14" fill="#f5a040"/>
+              <path d="M14 34 Q40 26 60 30 Q80 24 106 32 Q110 42 106 44 Q80 38 60 42 Q40 36 14 44 Z" fill="#ffc107" opacity="0.9"/>
+              <path d="M12 44 L108 44 L111 54 L9 54 Z" fill="#ff8f00"/>
+              <rect x="10" y="54" width="100" height="20" rx="5" fill="#4e2700"/>
+              <line x1="28" y1="56" x2="28" y2="72" stroke="#3a1c00" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="48" y1="56" x2="48" y2="72" stroke="#3a1c00" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="68" y1="56" x2="68" y2="72" stroke="#3a1c00" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="88" y1="56" x2="88" y2="72" stroke="#3a1c00" stroke-width="2.5" stroke-linecap="round"/>
+              <ellipse cx="60" cy="80" rx="52" ry="8" fill="#c8702a"/>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <span class="menu-card__tag menu-card__tag--hot">🧀 Destaque</span>
+          <h3>Cheddar Explosion</h3>
+          <p>Smash 180g, triplo cheddar, onion rings, jalapeño, molho chipotle</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">R$ 46,90</span>
+            <a href="#cta" class="btn btn--sm btn--primary">Pedir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="burgers">
+        <div class="menu-card__img menu-card__img--5">
+          <div class="burger-mini">
+            <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="60" cy="20" rx="46" ry="18" fill="#bf5a1a"/>
+              <ellipse cx="60" cy="16" rx="44" ry="14" fill="#d9701f"/>
+              <path d="M14 32 Q40 24 60 28 Q80 22 106 30 Q110 40 106 42 Q80 36 60 40 Q40 34 14 42 Z" fill="#4caf50"/>
+              <rect x="14" y="42" width="92" height="8" rx="3" fill="#e53935"/>
+              <rect x="12" y="50" width="96" height="20" rx="6" fill="#3a1c00"/>
+              <line x1="30" y1="52" x2="30" y2="68" stroke="#2a0e00" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="50" y1="52" x2="50" y2="68" stroke="#2a0e00" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="70" y1="52" x2="70" y2="68" stroke="#2a0e00" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="90" y1="52" x2="90" y2="68" stroke="#2a0e00" stroke-width="2.5" stroke-linecap="round"/>
+              <ellipse cx="60" cy="76" rx="52" ry="10" fill="#bf5a1a"/>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Novo</span>
+          <h3>Smash Urbana</h3>
+          <p>Smash fininho 120g, molho especial, alface americana, cebola brulée, pão australiano</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">R$ 36,90</span>
+            <a href="#cta" class="btn btn--sm btn--primary">Pedir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="extras">
+        <div class="menu-card__img menu-card__img--6">
+          <div class="burger-mini burger-mini--fries">
+            <svg viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg">
+              <rect x="25" y="45" width="70" height="50" rx="5" fill="#c62828"/>
+              <text x="60" y="72" text-anchor="middle" fill="white" font-size="9" font-weight="bold" font-family="sans-serif">BRASA</text>
+              <rect x="32" y="10" width="10" height="40" rx="4" fill="#ffc107"/>
+              <rect x="47" y="6" width="10" height="44" rx="4" fill="#ffca28"/>
+              <rect x="62" y="8" width="10" height="42" rx="4" fill="#ffc107"/>
+              <rect x="77" y="12" width="10" height="38" rx="4" fill="#ffca28"/>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Acompanhamento</span>
+          <h3>Batata Artesanal</h3>
+          <p>Batata crinkle frita na hora, temperada com sal grosso e páprica defumada</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">R$ 18,90</span>
+            <a href="#cta" class="btn btn--sm btn--primary">Pedir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="combos">
+        <div class="menu-card__img menu-card__img--7">
+          <div class="burger-mini">
+            <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="20" width="45" height="60" rx="5" fill="#b71c1c"/>
+              <path d="M10 30 Q32 22 55 28 L55 20 Q32 14 10 20 Z" fill="#d32f2f"/>
+              <text x="32" y="52" text-anchor="middle" fill="white" font-size="7" font-weight="bold" font-family="sans-serif">BRASA</text>
+              <rect x="25" y="5" width="7" height="18" rx="3" fill="#ffca28"/>
+              <rect x="36" y="2" width="7" height="21" rx="3" fill="#ffd740"/>
+              <rect x="47" y="4" width="7" height="19" rx="3" fill="#ffca28"/>
+              <ellipse cx="86" cy="55" rx="28" ry="28" fill="#c8702a"/>
+              <ellipse cx="86" cy="52" rx="26" ry="24" fill="#e8832e"/>
+              <ellipse cx="75" cy="44" rx="4" ry="2.5" fill="#c8702a" transform="rotate(-15,75,44)"/>
+              <ellipse cx="86" cy="41" rx="4" ry="2.5" fill="#c8702a"/>
+              <ellipse cx="97" cy="44" rx="4" ry="2.5" fill="#c8702a" transform="rotate(15,97,44)"/>
+              <path d="M62 62 Q74 56 86 60 Q98 54 110 60 Q112 67 110 69 Q98 64 86 68 Q74 62 62 69 Z" fill="#4caf50"/>
+              <rect x="60" y="69" width="52" height="8" rx="2" fill="#e53935"/>
+              <rect x="58" y="77" width="56" height="14" rx="4" fill="#4e2700"/>
+              <ellipse cx="86" cy="82" rx="30" ry="9" fill="#c8702a"/>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <span class="menu-card__tag menu-card__tag--hot">⚡ Combo</span>
+          <h3>Combo X-Brasa</h3>
+          <p>X-Brasa + Batata Artesanal Média + Refrigerante 500ml</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">R$ 44,90</span>
+            <a href="#cta" class="btn btn--sm btn--primary">Pedir</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-card" data-cat="combos">
+        <div class="menu-card__img menu-card__img--8">
+          <div class="burger-mini">
+            <svg viewBox="0 0 120 90" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="60" cy="20" rx="50" ry="19" fill="#bf5a1a"/>
+              <ellipse cx="60" cy="15" rx="48" ry="14" fill="#d9701f"/>
+              <ellipse cx="44" cy="10" rx="5" ry="3" fill="#9e3d00"/>
+              <ellipse cx="60" cy="7" rx="5" ry="3" fill="#9e3d00"/>
+              <ellipse cx="76" cy="10" rx="5" ry="3" fill="#9e3d00"/>
+              <rect x="10" y="30" width="100" height="18" rx="5" fill="#3e1f00"/>
+              <line x1="28" y1="32" x2="28" y2="46" stroke="#2a1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="48" y1="32" x2="48" y2="46" stroke="#2a1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="68" y1="32" x2="68" y2="46" stroke="#2a1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="88" y1="32" x2="88" y2="46" stroke="#2a1200" stroke-width="3" stroke-linecap="round"/>
+              <rect x="10" y="48" width="100" height="18" rx="5" fill="#3e1f00"/>
+              <line x1="28" y1="50" x2="28" y2="64" stroke="#2a1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="48" y1="50" x2="48" y2="64" stroke="#2a1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="68" y1="50" x2="68" y2="64" stroke="#2a1200" stroke-width="3" stroke-linecap="round"/>
+              <line x1="88" y1="50" x2="88" y2="64" stroke="#2a1200" stroke-width="3" stroke-linecap="round"/>
+              <ellipse cx="60" cy="74" rx="54" ry="12" fill="#c8702a"/>
+            </svg>
+          </div>
+        </div>
+        <div class="menu-card__body">
+          <span class="menu-card__tag menu-card__tag--hot">⚡ Combo</span>
+          <h3>Combo Bacon Duplo</h3>
+          <p>Bacon Supremo + Batata Grande + Refri 500ml + Sobremesa</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">R$ 59,90</span>
+            <a href="#cta" class="btn btn--sm btn--primary">Pedir</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================
+       DIFERENCIAIS
+  ============================ -->
+  <section class="diferenciais" id="diferenciais">
+    <div class="section-header">
+      <span class="section-tag">💪 Por que a Brasa?</span>
+      <h2 class="section-title">Feito com <em>Respeito</em></h2>
+    </div>
+    <div class="diferenciais__grid">
+      <div class="diferencial-item">
+        <div class="diferencial-item__icon">🔥</div>
+        <h3>Hambúrguer na Brasa</h3>
+        <p>Chapa quente, técnica smash e calor de verdade. Cada burger tem aquela crosta dourada que faz toda diferença.</p>
+      </div>
+      <div class="diferencial-item">
+        <div class="diferencial-item__icon">🥩</div>
+        <h3>Carne Artesanal</h3>
+        <p>Blend exclusivo de acém e fraldinha, moído fresco todo dia. Zero conservante. Zero congelado.</p>
+      </div>
+      <div class="diferencial-item">
+        <div class="diferencial-item__icon">🌿</div>
+        <h3>Ingredientes Frescos</h3>
+        <p>Alface crocante, tomate maduro e molhos feitos na cozinha. Sem nada de fora de caixa ou envelope.</p>
+      </div>
+      <div class="diferencial-item">
+        <div class="diferencial-item__icon">🍞</div>
+        <h3>Pão Selado na Manteiga</h3>
+        <p>Pão brioche passado na manteiga ghee na chapa. Crocante por fora, macio por dentro.</p>
+      </div>
+      <div class="diferencial-item">
+        <div class="diferencial-item__icon">⚡</div>
+        <h3>Entrega Rápida</h3>
+        <p>Saiu do forno pra sua porta em até 30 minutos. Quente, crocante e perfeito do jeito que foi feito.</p>
+      </div>
+      <div class="diferencial-item">
+        <div class="diferencial-item__icon">🏆</div>
+        <h3>Mais Pedido da Cidade</h3>
+        <p>+10.000 pedidos por mês. Avaliação 4.9 no iFood. Os clientes provam e voltam. Sem exceção.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       AVALIAÇÕES
+  ============================ -->
+  <section class="avaliacoes" id="avaliacoes">
+    <div class="section-header">
+      <span class="section-tag section-tag--dark">⭐ Clientes reais</span>
+      <h2 class="section-title">O povo <em>aprovou</em></h2>
+    </div>
+    <div class="avaliacoes__grid">
+      <div class="review-card">
+        <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+        <p>"Melhor smash que já comi na vida. A crosta da carne é perfeita. Chego tarde e mando um Bacon Supremo toda semana."</p>
+        <div class="review-card__author">
+          <div class="review-card__avatar">MR</div>
+          <div>
+            <strong>Marcos Ribeiro</strong>
+            <span>São Paulo, SP</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card review-card--destaque">
+        <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+        <p>"Chegou em 25 minutos, ainda fumegando! O pão selado na manteiga é absurdo de bom. Não consigo pedir de outro lugar."</p>
+        <div class="review-card__author">
+          <div class="review-card__avatar">AF</div>
+          <div>
+            <strong>Ana Ferreira</strong>
+            <span>São Paulo, SP</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+        <p>"Hambúrguer gigante e com sabor absurdo. O cheddar escorrendo, o bacon crocante... Impossível comer só um."</p>
+        <div class="review-card__author">
+          <div class="review-card__avatar">LC</div>
+          <div>
+            <strong>Lucas Carvalho</strong>
+            <span>São Paulo, SP</span>
+          </div>
+        </div>
+      </div>
+      <div class="review-card">
+        <div class="review-card__stars">⭐⭐⭐⭐⭐</div>
+        <p>"Pedi o combo família no aniversário da minha filha. Todo mundo ficou louco. Quantidade e qualidade juntos. Parabéns!"</p>
+        <div class="review-card__author">
+          <div class="review-card__avatar">PS</div>
+          <div>
+            <strong>Patricia Santos</strong>
+            <span>São Paulo, SP</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="avaliacoes__stats">
+      <div class="stat-item">
+        <span class="stat-num">4.9</span>
+        <span class="stat-label">Nota no iFood</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">10k+</span>
+        <span class="stat-label">Pedidos por mês</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">98%</span>
+        <span class="stat-label">Recomendam</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">3 anos</span>
+        <span class="stat-label">Na cidade</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CTA FINAL
+  ============================ -->
+  <section class="cta-final" id="cta">
+    <div class="cta-final__container">
+      <p class="cta-final__eyebrow">🕐 Abrimos até meia-noite</p>
+      <h2 class="cta-final__title">Bateu a fome?<br><em>A Brasa resolve.</em></h2>
+      <p class="cta-final__sub">Delivery em toda a cidade. Segunda a domingo, das 11h às 00h.</p>
+      <div class="cta-final__btns">
+        <a href="https://wa.me/5511999999999" target="_blank" class="btn btn--whatsapp">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pedir pelo WhatsApp
+        </a>
+        <a href="https://www.ifood.com.br/" class="btn btn--ifood">
+          <span>🛵</span>
+          Pedir no iFood
+        </a>
+      </div>
+    </div>
+    <div class="cta-final__stripes">
+      <div></div><div></div><div></div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+  ============================ -->
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="logo-brasa">BRASA</span><span class="logo-urbana">URBANA</span>
+        </div>
+        <p>Hambúrguer de verdade. Sabor de respeito. Feito com carne fresca, todo dia, sem frescura.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/5511999999999" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <h4>Menu</h4>
+        <a href="#promocoes">Promoções</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#diferenciais">Nossa História</a>
+        <a href="#avaliacoes">Avaliações</a>
+      </div>
+      <div class="footer__nav">
+        <h4>Pedir</h4>
+        <a href="#">iFood</a>
+        <a href="https://wa.me/5511999999999">WhatsApp</a>
+        <a href="#">Aplicativo</a>
+        <a href="#">Retirar na loja</a>
+      </div>
+      <div class="footer__info">
+        <h4>Onde estamos</h4>
+        <p>📍 Rua das Brasas, 420<br>Vila Madalena — São Paulo, SP</p>
+        <p>📞 (11) 9 9999-0000</p>
+        <p>🕐 Seg–Sex: 11h às 23h<br>Sáb–Dom: 11h às 00h</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Brasa Urbana. Todos os direitos reservados. 🔥 Feito com fome.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
